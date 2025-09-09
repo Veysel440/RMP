@@ -3,7 +3,10 @@
     "name": "ChronicCare RMP",
     "slug": "chroniccare-rmp",
     "scheme": "ccare",
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
     "android": {
       "package": "com.veyselfw.chroniccare",
       "permissions": [
@@ -13,7 +16,10 @@
         "BLUETOOTH_SCAN",
         "ACCESS_FINE_LOCATION"
       ],
-      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#ffffff" }
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "ios": {
       "bundleIdentifier": "com.veyselfw.chroniccare",
