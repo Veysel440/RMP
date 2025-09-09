@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "ChronicCare RMP",
+    "slug": "chroniccare-rmp",
+    "scheme": "ccare",
+    "plugins": ["expo-router"],
+    "android": {
+      "package": "com.veyselfw.chroniccare",
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#ffffff" }
+    },
+    "ios": {
+      "bundleIdentifier": "com.veyselfw.chroniccare",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Sağlık cihazlarına bağlanmak için Bluetooth gereklidir.",
+        "NSBluetoothPeripheralUsageDescription": "Bluetooth cihazları ile iletişim için gereklidir.",
+        "NSLocationWhenInUseUsageDescription": "Bluetooth taraması için konum erişimi gerekir."
+      }
+    }
+  }
+}
